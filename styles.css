@@ -52,7 +52,7 @@ input[type="text"] {
   border: none;
   outline: none;
   background: transparent;
-  font-size: 15px;
+  font-size: 18px;
   margin-left: 20px;
 }
 
@@ -62,16 +62,22 @@ button {
   outline: none;
   background: rgb(255, 89, 0);
   border-radius: 30px;
-  font-size: 15px;
+  font-size: 18px;
   color: white;
   font-weight: 100;
+  transition: background-color 0.4s ease;
+}
+
+button:hover {
+  background: red;
 }
 
 ul li {
   list-style: none;
-  font-size: 15px;
+  font-size: 18px;
   padding: 12px;
   display: flex;
+  align-items: center;
 }
 
 input[type="checkbox"] {
@@ -79,14 +85,14 @@ input[type="checkbox"] {
   -webkit-appearance: none;
   width: 20px;
   height: 20px;
-  max-width: 15px;
-  max-height: 15px;
+  max-width: 20px;
+  max-height: 20px;
   border: 1px solid #ccc;
   border-radius: 50%;
   outline: none;
   cursor: pointer;
   position: relative;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 input[type="checkbox"]:checked {
@@ -108,4 +114,18 @@ input[type="checkbox"]:checked::before {
 .checkedTask {
   color: grey;
   text-decoration: line-through;
+}
+
+.crossIcon {
+  margin-left: auto;
+  margin-right: 20px;
+  font-weight: bolder;
+  padding: 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
+
+.crossIcon:hover {
+  background: rgb(201, 201, 201);
 }
