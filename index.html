@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TodoList</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="todoApp">
         <h2>ToDo List <img src="images/icon.png" alt="icon" /></h2>
         <div class="row">
-          <input type="text" id="inputBox" placeholder="Add your task." />
-          <button>Add</button>
+          <input type="text" id="inputBox" placeholder="Add your task" />
+          <button onclick="addTask()">Add</button>
         </div>
-        <ul>
-          <li>
+        <ul id="listContainer">
+          <!-- <li>
             <input type="checkbox" /><span class="checkedTask">Task 1</span>
           </li>
           <li><input type="checkbox" /><span>Task 2</span></li>
@@ -26,9 +25,10 @@
           <li><input type="checkbox" /><span>Task 6</span></li>
           <li><input type="checkbox" /><span>Task 7</span></li>
           <li><input type="checkbox" /><span>Task 8</span></li>
-          <li><input type="checkbox" /><span>Task 9</span></li>
+          <li><input type="checkbox" /><span>Task 9</span></li> -->
         </ul>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
